@@ -234,7 +234,7 @@ watch = true
   [params.navigation]
     about = "About"
     blogs = "Blogs"
-    brand = "ACenterA"
+    brand = "The Agency"
     contact = "Contact"
     portfolio = "Portfolio"
     services = "Services"
