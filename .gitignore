@@ -1,0 +1,7 @@
+hugo.exe
+hugo
+public
+node_modules
+npm-debug.log
+.ssh/
+public

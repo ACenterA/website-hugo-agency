@@ -1,0 +1,11 @@
+version: '3'
+services:
+  serverlesscms:
+    image: acentera/prod:serverlesscms-latest
+    # build: .
+    ports:
+    - "1313:1313"
+    - "8081:8081"
+    volumes:
+    - .:/data
+    command: ["launch.bash","$USER","serveApi"]

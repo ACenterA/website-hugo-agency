@@ -1,0 +1,312 @@
+archetypedir = "archetypes"
+baseurl = "//localhost:1313/"
+builddrafts = false
+buildexpired = false
+buildfuture = false
+cachedir = "/tmp/hugo_cache/"
+canonifyurls = false
+cleandestinationdir = false
+contentdir = "content"
+datadir = "data"
+debug = false
+defaultcontentlanguage = "en"
+defaultcontentlanguageinsubdir = false
+defaultlayout = "post"
+disable404 = false
+disablealiases = false
+disablelivereload = false
+disablepathtolower = false
+disablerobotstxt = false
+disablerss = false
+disablesitemap = false
+enableapi = ""
+enabledev = "true"
+enableemoji = false
+enablegitinfo = false
+enablemissingtranslationplaceholders = "false"
+footnoteanchorprefix = ""
+footnotereturnlinkcontents = ""
+forcesyncstatic = "true"
+googleanalytics = ""
+hascjklanguage = false
+i18ndir = "i18n"
+ignorecache = false
+ignorefiles = []
+layoutdir = "layouts"
+logi18nwarnings = false
+metadataformat = "toml"
+multilingual = true
+newcontenteditor = ""
+paginate = 10.0
+paginatepath = "page"
+pluralizelisttitles = true
+port = 1313.0
+preservetaxonomynames = false
+publishdir = "public"
+pygmentscodefences = false
+pygmentscodefencesguesssyntax = false
+pygmentsoptions = ""
+pygmentsstyle = "monokai"
+pygmentsuseclasses = false
+relativeurls = false
+removepathaccents = false
+rsslimit = -1.0
+rssuri = "index.xml"
+sectionpagesmenu = ""
+staticdir = "static"
+theme = "hugo-agency-theme"
+themesdir = "themes"
+title = "TitleHere"
+titlecasestyle = "AP"
+uglyurls = false
+usemodtimeasfallback = false
+verbose = true
+watch = true
+
+[blackfriday]
+  angledquotes = false
+  fractions = true
+  hreftargetblank = false
+  latexdashes = true
+  plainidanchors = true
+  smartdashes = true
+  smartypants = true
+  smartypantsquotesnbsp = false
+  tasklists = true
+
+[indexes]
+  category = "categories"
+  tag = "tags"
+
+[languages]
+  [languages.de]
+    id = "de"
+    languagename = "aDaeutcha"
+    value = "de"
+    [languages.de.menu]
+
+      [[languages.de.menu.main]]
+        name = "Startseite"
+        url = "/"
+        weight = 0.0
+  [languages.en]
+    copyright = "All rights reserved."
+    description = "Scriptor is a minimal Hugo blogging theme for writers."
+    id = "en"
+    languagecode = "en-us"
+    languagename = "English"
+    message = "John Doe is a designer, speaker, and author. He is the Creative Director of Awesome Design studio, co-founder of magazine Camera and a coffee junkie."
+    title = "Nice to meet you!"
+    value = "en"
+    weight = 20.0
+    [languages.en.menu]
+
+      [[languages.en.menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 0.0
+  [languages.fr]
+    copyright = "Alle Rechte vorbehalten."
+    description = "Scriptor ist ein minimalistisches Hugo-Theme für Blogger."
+    id = "fr"
+    languagecode = "fr-ca"
+    languagename = "Francais"
+    message = "John Doe ist Designer, Referent und Autor. Er ist der Creative Director bei Awesome Design Studio, Mitbegründer des Magazines Camera und ein Kaffee-Junkie."
+    paginatepath = "seite"
+    title = "Mon Blog!"
+    value = "fr"
+    weight = 10.0
+
+[menu]
+
+  [[menu.postpend]]
+    name = "External link"
+    url = "http://gohugo.io"
+    weight = 10.0
+
+[params]
+  description = "Your description"
+  disablefonts = false
+  favicon = "favicon.ico"
+  name = "Your name"
+  [params.about]
+    enable = true
+    endpoint = "Be part<br>of our<br>story!"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    title = "About"
+
+    [[params.about.events]]
+      date = "2009-2011"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      img = "1.jpg"
+      title = "Our Humble Beginnings"
+
+    [[params.about.events]]
+      date = "March 2011"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      img = "2.jpg"
+      title = "An Agency is Born"
+
+    [[params.about.events]]
+      date = "December 2012"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      img = "3.jpg"
+      title = "Our Humble Beginnings"
+
+    [[params.about.events]]
+      date = "July 2014"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+      img = "4.jpg"
+      title = "Phase Two Expansion"
+  [params.blogs]
+    enable = true
+    title = "Blogs"
+
+  [[params.clients]]
+    link = "#"
+    logo = "envato.jpg"
+
+  [[params.clients]]
+    link = "#"
+    logo = "designmodo.jpg"
+
+  [[params.clients]]
+    link = "#"
+    logo = "themeforest.jpg"
+
+  [[params.clients]]
+    link = "#"
+    logo = "creative-market.jpg"
+  [params.clients_list]
+    enable = true
+  [params.contact]
+    buttontext = "Send message"
+    email = "your@email.com"
+    enable = true
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    title = "Contact us"
+    [params.contact.form]
+      [params.contact.form.email]
+        text = "Your Email *"
+        warning = "Please enter your email address."
+      [params.contact.form.message]
+        text = "Your Message *"
+        warning = "Please enter a message."
+      [params.contact.form.name]
+        text = "Your Name *"
+        warning = "Please enter your name."
+      [params.contact.form.phone]
+        text = "Your Phone *"
+        warning = "Please enter your phone number."
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+  [params.footer]
+    copyright = "Published under the Apache License 2.0."
+    enable = true
+
+    [[params.footer.quicklinks]]
+      link = "#"
+      text = "Privacy Policy"
+
+    [[params.footer.quicklinks]]
+      link = "#"
+      text = "Terms of Use"
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "#"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "#"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      link = "#"
+  [params.hero]
+    background_image = "img/header-bg.jpg"
+    buttonText = "Start"
+    buttontext = "Tell me more"
+    href = "https://www.serverlesscdn.com/"
+    subtitle = "Start your free website TODAY"
+    title = "Eazy website creation"
+  [params.navigation]
+    about = "About"
+    blogs = "Blogs"
+    brand = "ACenterA"
+    contact = "Contact"
+    portfolio = "Portfolio"
+    services = "Services"
+    team = "Team"
+  [params.portfolio]
+    enable = true
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    title = "Portfolio"
+    [params.portfolio.modal]
+      buttontext = "Close project"
+      category = "Category"
+      client = "Client"
+      date = "Date"
+  [params.services]
+    enable = true
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    title = "Services"
+
+    [[params.services.row]]
+
+      [[params.services.row.list]]
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon = "fa-shopping-cart"
+        title = "E-Commerce"
+        url = "#"
+
+      [[params.services.row.list]]
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon = "fa-laptop"
+        title = "Responsive Design"
+        url = "#"
+
+      [[params.services.row.list]]
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        icon = "fa-lock"
+        title = "Web"
+        url = "#"
+  [params.team]
+    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+    enable = true
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    title = "Our amazing team"
+
+    [[params.team.members]]
+      bio = "Kay is an awesome Lead Designer with heaps of experience in the field of UX.\nShe worked at Pied Piper for years until they went belly up."
+      img = "1.jpg"
+      livesIn = "[Munich, Germany](#some-maps-url)"
+      name = "Kay Garland"
+      position = "Lead Designer"
+      reportsTo = "CTO"
+      scope = ["UX for [member dashboard](#)", "Maintainer for [awesome-project](#)", "Open Source [community management](#)"]
+      social = [["fa-twitter", "#"], ["fa-facebook", "#"], ["fa-linkedin", "#"]]
+
+    [[params.team.members]]
+      img = "2.jpg"
+      name = "Larry Parker"
+      position = "Lead Marketer"
+      social = [["fa-twitter", "#"], ["fa-facebook", "#"], ["fa-linkedin", "#"]]
+
+    [[params.team.members]]
+      img = "3.jpg"
+      name = "Diana Pertersen"
+      position = "Lead Developer"
+      social = [["fa-twitter", "#"], ["fa-facebook", "#"], ["fa-linkedin", "#"]]
+
+[permalinks]
+
+[sitemap]
+  changefreq = ""
+  filename = "sitemap.xml"
+  priority = -1.0
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
