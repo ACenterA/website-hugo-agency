@@ -2,7 +2,6 @@
 
 A Fast and Flexible CMS for Static Site Generator demo for GoHugo / Hugo
 
-
 [GoHugo Website](https://gohugo.io) |
 [Forum](https://discourse.gohugo.io) |
 [Documentation](https://gohugo.io/overview/introduction/) |
