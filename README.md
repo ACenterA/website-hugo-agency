@@ -40,7 +40,6 @@ Second: After you have cloned this repository or a Fork simply type `docker-comp
 
 Finally visit htt://localhost:1313/test.html and feel free to update the components and click on the save button at the top.
 
-
 ### Support
 
 Anyone that would like to participate building a new Opensource Local CMS for Static Generators [Join on Gitter](https://gitter.im/ACenterA/serverlesscms)
