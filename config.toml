@@ -77,7 +77,7 @@ watch = true
 [languages]
   [languages.de]
     id = "de"
-    languagename = "aDaeutcha"
+    languagename = "Deutch"
     value = "de"
     [languages.de.menu]
 
