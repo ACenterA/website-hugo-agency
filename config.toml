@@ -1,5 +1,4 @@
 archetypedir = "archetypes"
-baseurl = "//localhost:1313/"
 builddrafts = false
 buildexpired = false
 buildfuture = false
@@ -59,7 +58,6 @@ uglyurls = false
 usemodtimeasfallback = false
 verbose = true
 watch = true
-workingdir = "/home/flavalliere/workspace/orig1/website-hugo-agency"
 
 [blackfriday]
   angledquotes = false
