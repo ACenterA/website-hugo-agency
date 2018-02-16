@@ -176,7 +176,8 @@ workingdir = "/home/flavalliere/workspace/orig1/website-hugo-agency"
     link = "#"
     logo = "creative-market.jpg"
   [params.clients_list]
-    enable = true
+    enable = false
+
   [params.contact]
     buttontext = "Send message"
     email = "your@email.com"
