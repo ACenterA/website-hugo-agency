@@ -19,8 +19,6 @@ disablepathtolower = false
 disablerobotstxt = false
 disablerss = false
 disablesitemap = false
-enableapi = ""
-enabledev = "true"
 enableemoji = false
 enablegitinfo = false
 enablemissingtranslationplaceholders = "false"
@@ -31,7 +29,6 @@ googleanalytics = ""
 hascjklanguage = false
 i18ndir = "i18n"
 ignorecache = false
-ignorefiles = []
 layoutdir = "layouts"
 logi18nwarnings = false
 metadataformat = "toml"
@@ -62,6 +59,7 @@ uglyurls = false
 usemodtimeasfallback = false
 verbose = true
 watch = true
+workingdir = "/home/flavalliere/workspace/orig1/website-hugo-agency"
 
 [blackfriday]
   angledquotes = false
@@ -130,7 +128,7 @@ watch = true
   favicon = "favicon.ico"
   name = "Your name"
   [params.about]
-    enable = true
+    enable = false
     endpoint = "Be part<br>of our<br>story!"
     subtitle = "Lorem ipsum dolor sit amet consectetur."
     title = "About"
@@ -182,7 +180,7 @@ watch = true
   [params.contact]
     buttontext = "Send message"
     email = "your@email.com"
-    enable = true
+    enable = false
     subtitle = "Lorem ipsum dolor sit amet consectetur."
     title = "Contact us"
     [params.contact.form]
@@ -226,21 +224,15 @@ watch = true
       link = "#"
   [params.hero]
     background_image = "img/header-bg.jpg"
-    buttonText = "Start"
-    buttontext = "Tell me more"
+    buttontext = "Start"
     href = "https://www.serverlesscdn.com/"
     subtitle = "Start your free website TODAY"
     title = "Eazy website creation"
   [params.navigation]
-    about = "About"
     blogs = "Blogs"
     brand = "The Agency"
-    contact = "Contact"
-    portfolio = "Portfolio"
-    services = "Services"
-    team = "Team"
   [params.portfolio]
-    enable = true
+    enable = false
     subtitle = "Lorem ipsum dolor sit amet consectetur."
     title = "Portfolio"
     [params.portfolio.modal]
@@ -249,7 +241,7 @@ watch = true
       client = "Client"
       date = "Date"
   [params.services]
-    enable = true
+    enable = false
     subtitle = "Lorem ipsum dolor sit amet consectetur."
     title = "Services"
 
@@ -274,7 +266,7 @@ watch = true
         url = "#"
   [params.team]
     description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
-    enable = true
+    enable = false
     subtitle = "Lorem ipsum dolor sit amet consectetur."
     title = "Our amazing team"
 
