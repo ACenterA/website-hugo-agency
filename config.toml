@@ -204,23 +204,43 @@ watch = true
 
     [[params.footer.quicklinks]]
       link = "#"
+      enable = false
       text = "Privacy Policy"
 
     [[params.footer.quicklinks]]
       link = "#"
+      enable = false
       text = "Terms of Use"
 
     [[params.footer.social]]
       icon = "fa-twitter"
-      link = "#"
+      name = "twitter"
 
     [[params.footer.social]]
       icon = "fa-facebook"
-      link = "#"
+      name = "facebook"
 
     [[params.footer.social]]
       icon = "fa-linkedin"
-      link = "#"
+      name = "linkedin"
+
+
+   [params.social]
+     [params.social.data]
+       [params.social.data.facebook]
+         enable = true
+         link = ""
+       [params.social.data.linkedin]
+         enable = true
+         link = ""
+       [params.social.data.twitter]
+         enable = true
+         link = ""
+     [params.social.keys]
+       facebook = "facebook"
+       linkedin = "linkedin"
+       twitter = "twitter"
+
   [params.hero]
     background_image = "img/header-bg.jpg"
     buttontext = "Start"
