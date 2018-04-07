@@ -1,7 +1,8 @@
 archetypedir = "archetypes"
-builddrafts = false
+baseurl = "//localhost:1313/"
+builddrafts = "true"
 buildexpired = false
-buildfuture = false
+buildfuture = "true"
 cachedir = "/tmp/hugo_cache/"
 canonifyurls = false
 cleandestinationdir = false
@@ -13,11 +14,13 @@ defaultcontentlanguageinsubdir = false
 defaultlayout = "post"
 disable404 = false
 disablealiases = false
-disablelivereload = false
+disablefastrender = false
 disablepathtolower = false
 disablerobotstxt = false
 disablerss = false
 disablesitemap = false
+enableapi = true
+enabledev = "true"
 enableemoji = false
 enablegitinfo = false
 enablemissingtranslationplaceholders = "false"
@@ -29,6 +32,7 @@ hascjklanguage = false
 i18ndir = "i18n"
 ignorecache = false
 layoutdir = "layouts"
+livereloadport = 1313.0
 logi18nwarnings = false
 metadataformat = "toml"
 multilingual = true
@@ -44,12 +48,16 @@ pygmentscodefencesguesssyntax = false
 pygmentsoptions = ""
 pygmentsstyle = "monokai"
 pygmentsuseclasses = false
+pygmentsuseclassic = false
 relativeurls = false
 removepathaccents = false
+rendertomemory = false
+resourcedir = "resources"
 rsslimit = -1.0
 rssuri = "index.xml"
 sectionpagesmenu = ""
 staticdir = "static"
+summarylength = 70.0
 theme = "hugo-agency-theme"
 themesdir = "themes"
 title = "TitleHere"
@@ -58,6 +66,7 @@ uglyurls = false
 usemodtimeasfallback = false
 verbose = true
 watch = true
+workingdir = "/home/flavalliere/workspace/orig1/test-blog01"
 
 [blackfriday]
   angledquotes = false
@@ -76,6 +85,8 @@ watch = true
 
 [languages]
   [languages.de]
+    disabled = false
+    enable = true
     id = "de"
     languagename = "Deutch"
     value = "de"
@@ -88,9 +99,12 @@ watch = true
   [languages.en]
     copyright = "All rights reserved."
     description = "Scriptor is a minimal Hugo blogging theme for writers."
+    disabled = false
+    enable = true
     id = "en"
     languagecode = "en-us"
     languagename = "English"
+    locked = true
     message = "John Doe is a designer, speaker, and author. He is the Creative Director of Awesome Design studio, co-founder of magazine Camera and a coffee junkie."
     title = "Nice to meet you!"
     value = "en"
@@ -104,14 +118,43 @@ watch = true
   [languages.fr]
     copyright = "Alle Rechte vorbehalten."
     description = "Scriptor ist ein minimalistisches Hugo-Theme für Blogger."
+    disabled = false
+    enable = true
     id = "fr"
     languagecode = "fr-ca"
     languagename = "Francais"
     message = "John Doe ist Designer, Referent und Autor. Er ist der Creative Director bei Awesome Design Studio, Mitbegründer des Magazines Camera und ein Kaffee-Junkie."
     paginatepath = "seite"
-    title = "Mon Blog!"
+    title = "Nice"
     value = "fr"
     weight = 10.0
+
+[[languagessorted]]
+  ContentDir = "content"
+  Disabled = false
+  Lang = "de"
+  LanguageName = "Deutch"
+  Title = ""
+  Weight = 0.0
+  [languagessorted.Cfg]
+
+[[languagessorted]]
+  ContentDir = "content"
+  Disabled = false
+  Lang = "fr"
+  LanguageName = "Francais"
+  Title = "Nice"
+  Weight = 10.0
+  [languagessorted.Cfg]
+
+[[languagessorted]]
+  ContentDir = "content"
+  Disabled = false
+  Lang = "en"
+  LanguageName = "English"
+  Title = "Nice to meet you!"
+  Weight = 20.0
+  [languagessorted.Cfg]
 
 [menu]
 
@@ -175,7 +218,6 @@ watch = true
     logo = "creative-market.jpg"
   [params.clients_list]
     enable = false
-
   [params.contact]
     buttontext = "Send message"
     email = "your@email.com"
@@ -203,13 +245,13 @@ watch = true
     enable = true
 
     [[params.footer.quicklinks]]
-      link = "#"
       enable = false
+      link = "#"
       text = "Privacy Policy"
 
     [[params.footer.quicklinks]]
-      link = "#"
       enable = false
+      link = "#"
       text = "Terms of Use"
 
     [[params.footer.social]]
@@ -223,33 +265,19 @@ watch = true
     [[params.footer.social]]
       icon = "fa-linkedin"
       name = "linkedin"
-
-
-   [params.social]
-     [params.social.data]
-       [params.social.data.facebook]
-         enable = true
-         link = ""
-       [params.social.data.linkedin]
-         enable = true
-         link = ""
-       [params.social.data.twitter]
-         enable = true
-         link = ""
-     [params.social.keys]
-       facebook = "facebook"
-       linkedin = "linkedin"
-       twitter = "twitter"
-
   [params.hero]
-    background_image = "img/header-bg.jpg"
+    background_image = "/img/header-bg.jpg"
     buttontext = "Start"
     href = "https://www.serverlesscdn.com/"
     subtitle = "Start your free website TODAY"
     title = "Eazy website creation"
+  [params.i18n]
+    heroTitle = "ACenterA CMS"
+    herosubtitle = "Conception rapide de site web."
+    herotitle = "ACenterA CMS"
   [params.navigation]
     blogs = "Blogs"
-    brand = "The Agency"
+    brand = "ACenterA"
   [params.portfolio]
     enable = false
     subtitle = "Lorem ipsum dolor sit amet consectetur."
@@ -283,6 +311,21 @@ watch = true
         icon = "fa-lock"
         title = "Web"
         url = "#"
+  [params.social]
+    [params.social.data]
+      [params.social.data.facebook]
+        enable = true
+        link = ""
+      [params.social.data.linkedin]
+        enable = true
+        link = ""
+      [params.social.data.twitter]
+        enable = true
+        link = ""
+    [params.social.keys]
+      facebook = "facebook"
+      linkedin = "linkedin"
+      twitter = "twitter"
   [params.team]
     description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
     enable = false
