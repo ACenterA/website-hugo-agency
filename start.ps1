@@ -1,7 +1,8 @@
 
-$url = "https://drive.google.com/uc?id=0BzI11xZnqucbUXlkSFB3NzRRS0U&export=download"
+$url = "https://drive.google.com/uc?id=1Ggne7jaiygH7dLT_hCP3eRFII_JkgOV0&export=download"
 
-$output = "$PSScriptRoot\hugo.exe"
+
+$output = "$PSScriptRoot\acentera-hugo.exe"
 
 if (!(Test-Path $output)) {
   Write-Warning "Will start to download Serverless CMS based on Hugo"
