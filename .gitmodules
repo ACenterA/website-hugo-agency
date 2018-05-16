@@ -1,3 +1,6 @@
 [submodule "themes/hugo-agency-theme"]
 	path = themes/hugo-agency-theme
 	url = https://github.com/ACenterA/hugo-agency-theme.git
+[submodule "admin"]
+	path = admin
+	url = https://github.com/ACenterA/acentera-cms-admin.git
